@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="styles" href="assests/styles.css">
-        <title>
-            API-QUIZ
-        </title>
-    </head>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/java.js">
+    <title>API-QUIZ</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="result">View High Scores</li>
+                <li>Timer: <span id="timer">90</span></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="quiz">
+        <section class="introduction">
+            <h1 class="title">QUIZ</h1>
+            <button type="submit" class="btn" id="startQuiz">Start Quiz!</button>
+        </section>
+        <section class="quiz">
+            <div id="quiz">
+            <h3 id="correct" class="notify correct-notify">correct!</h3>
+            <h3 id="wrong" class="notify wrong-notify">incorrect!</h3>
+            </div>
+        </section>
+        <section class="display">
+            <div class="display-flex">
+            <h1 class="title">All done!</h1>
+            <h3>Your final score is: <span id="ViewResults"></span> out of <span id="quiz"></span></h3>
+                <label id="name" for="userInitials">Enter your initials: </label>
+                <input type="text" id="userInitials">
+                <button type="submit" id="submit" class="btn">Submit Your Score!</button>
+                <button type="submit" class="btn" id="restart">Restart Quiz!</button>
+            </div>
+        </section>
+        <section class="ViewResults" id="ViewResults">
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
 </html>
